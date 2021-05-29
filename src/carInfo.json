@@ -11,6 +11,16 @@
     },
     {
         "id": 1,
+        "title": "Model Y",
+        "description": "Order Online for Touchless Delivery",
+        "image": "https://i.ibb.co/CbMXbCZ/model-y.jpg",
+        "range": "410",
+        "time": "2.05",
+        "topSpeed": "190",
+        "peakPower": "1,040"
+    },
+    {
+        "id": 2,
         "title": "Model 3",
         "description": "Order Online for Touchless Delivery",
         "image": "https://i.ibb.co/fD1ynz8/model-3.jpg",
@@ -20,7 +30,7 @@
         "peakPower": "900"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Model X",
         "description": "Order Online for Touchless Delivery",
         "image": "https://i.ibb.co/9hqHbP9/model-x.jpg",
@@ -29,45 +39,36 @@
         "topSpeed": "150",
         "peakPower": "1,130"
     },
-    {
-        "id": 3,
-        "title": "Model Y",
-        "description": "Order Online for Touchless Delivery",
-        "image": "https://i.ibb.co/CbMXbCZ/model-y.jpg",
-        "range": "410",
-        "time": "2.05",
-        "topSpeed": "190",
-        "peakPower": "1,040"
-    },
+    
     {
         "id": 4,
-        "title": "Model Y",
-        "description": "Order Online for Touchless Delivery",
-        "image": "https://i.ibb.co/CbMXbCZ/model-y.jpg",
-        "range": "410",
-        "time": "2.05",
-        "topSpeed": "190",
-        "peakPower": "1,040"
+        "title": "Lowest Cost Solar Panels in BD",
+        "description": "Money-back guarantee",
+        "image": "https://i.ibb.co/WBZdJcw/solar-panel.jpg",
+        "range": "",
+        "time": "",
+        "topSpeed": "",
+        "peakPower": ""
     },
     {
         "id": 5,
-        "title": "Model Y",
-        "description": "Order Online for Touchless Delivery",
-        "image": "https://i.ibb.co/CbMXbCZ/model-y.jpg",
-        "range": "410",
-        "time": "2.05",
-        "topSpeed": "190",
-        "peakPower": "1,040"
+        "title": "Solar for New Roofs",
+        "description": "Solar Roof Costs Less Than a New Roof Plus Solar Panels",
+        "image": "https://i.ibb.co/Q6t0sr7/solar-roof.jpg",
+        "range": "",
+        "time": "",
+        "topSpeed": "",
+        "peakPower": ""
     },
     {
         "id": 6,
-        "title": "Model Y",
-        "description": "Order Online for Touchless Delivery",
-        "image": "https://i.ibb.co/CbMXbCZ/model-y.jpg",
-        "range": "410",
-        "time": "2.05",
-        "topSpeed": "190",
-        "peakPower": "1,040"
+        "title": "Accessories",
+        "description": "",
+        "image": "https://i.ibb.co/Fn9d2gf/accessories.jpg",
+        "range": "",
+        "time": "",
+        "topSpeed": "",
+        "peakPower": ""
     }
 ]
 

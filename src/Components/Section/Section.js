@@ -6,7 +6,7 @@ const Section = (props) => {
   const allCars = useSelector((state) => {
     return state.cars.allCars;
   });
-  const {title, description, range, image} = props.car;
+  const {id, title, description, range, image} = props.car;
 
   return (
     <Wrap image={image}>
@@ -20,7 +20,10 @@ const Section = (props) => {
       <Buttons>
         <ButtonGroup>
           <LeftButton>Custom Order</LeftButton>
-          <RightButton>Existing Inventory</RightButton>
+          {
+              id===6 ||
+              <RightButton>Existing Inventory</RightButton>
+          }
         </ButtonGroup>
 
         <DownArrow src="/images/down-arrow.svg" />
@@ -78,7 +81,7 @@ const RightButton = styled(LeftButton)`
 `;
 
 const DownArrow = styled.img`
-  margin-top: 20px;
+
   height: 40px;
   animation: animateDown infinite 1.5s;
   overflow-x: hidden;
