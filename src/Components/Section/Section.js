@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Section = (props) => {
-    const {title, description, image, range} = props.car;
+    const {title, description, range} = props.car;
     return (
         <Wrap>
             <ItemText>
