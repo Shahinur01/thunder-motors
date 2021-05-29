@@ -34,6 +34,27 @@ const Home = () => {
                 leftBtnText="Custom Order"
                 rightBtnText="Existing Inventory"
             />
+            <Section
+                title="Lowest Cost Solar Model in BD"
+                description="Money-back Guarantee"
+                bgImg="solar-panel.jpg"
+                leftBtnText="Order Now"
+                rightBtnText="Learn More"
+            />
+            <Section
+                title="Solar For New Roofs"
+                description="Solar Roof Cost Less than a new Roof"
+                bgImg="solar-roof.jpg"
+                leftBtnText="Order Now"
+                rightBtnText="Learn More"
+            />
+            <Section
+                title="Accessories"
+                description=""
+                bgImg="accessories.jpg"
+                leftBtnText="Order Now"
+               
+            />
             
         </Container>
     );
@@ -42,6 +63,7 @@ const Home = () => {
 export default Home;
 
 const Container =styled.div`
-    height: 100vh
+    height: 100vh;
+    z-index: 10;
 
 `
