@@ -11,14 +11,11 @@ const Home = () => {
     console.log(allCars)
     return (
         <Container>
-            {/* <Section/>
-            <Section/>
-            <Section/>
-            <Section/>
-            <Section/> */}
+           
             {
-                allCars?.map(car => <Section key={car.id} car={car}></Section>)
+                allCars?.map((car)=> <Section key={car.id} car={car} bgImg={car.image} />)
             }
+            
         </Container>
     );
 };
@@ -26,6 +23,7 @@ const Home = () => {
 export default Home;
 
 const Container =styled.div`
-    height: 100vh
+    height: 100vh;
+    z-index: 10;
 
 `
