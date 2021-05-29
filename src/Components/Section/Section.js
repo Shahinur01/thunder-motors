@@ -6,10 +6,10 @@ const Section = (props) => {
   const allCars = useSelector((state) => {
     return state.cars.allCars;
   });
-  const {title, description, range} = props.car;
+  const {title, description, range, image} = props.car;
 
   return (
-    <Wrap>
+    <Wrap image={image}>
       <ItemText>
               <h1>{title}</h1>
               <p>{description}</p>
@@ -37,7 +37,7 @@ const Wrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/model-s.jpg");
+  background-image: ${props=>`url("${props.image}")`};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
