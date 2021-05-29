@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Section = () => {
+const Section = (props) => {
+    const {title, description, image, range} = props.car;
     return (
         <Wrap>
             <ItemText>
-                <h1>Model S</h1>
-                <p>Order Online for Touchless Delivery</p>
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <p>Speed Range: {range} km/h</p>
             </ItemText>
 
             <Buttons>
@@ -38,8 +40,6 @@ const Wrap= styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
-
-
 `
 
 const ItemText= styled.div`
