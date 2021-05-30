@@ -1,3 +1,3 @@
 ## redux site
 
-redux
+redux part
