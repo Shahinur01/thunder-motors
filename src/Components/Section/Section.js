@@ -3,9 +3,9 @@ import { useSelector } from "react-redux";
 import styled from "styled-components";
 
 const Section = (props) => {
-  const allCars = useSelector((state) => {
-    return state.cars.allCars;
-  });
+//   const allCars = useSelector((state) => {
+//     return state.cars.allCars;
+//   });
   const {title, description, range, image} = props.car;
 
   return (
