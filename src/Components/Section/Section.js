@@ -15,6 +15,10 @@ const Section = (props) => {
 
   const {title, description, range, image,id} = props.car;
   const dispatch = useDispatch()
+//   const allCars = useSelector((state) => {
+//     return state.cars.allCars;
+//   });
+ 
 
   return (
     <Wrap image={image}>
