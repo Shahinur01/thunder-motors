@@ -1,12 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
+import { selected } from "../Redux/Action/carAction";
 
 const Section = (props) => {
   const allCars = useSelector((state) => {
     return state.cars.allCars;
   });
-  const {title, description, range, image} = props.car;
+// to be copied
+  const selectedCars = ((state)=>{
+    return state.cars.selected;
+  })
+  console.log(selectedCars);
+
+  const {title, description, range, image,id} = props.car;
+  const dispatch = useDispatch()
 
   return (
     <Wrap image={image}>
@@ -19,7 +27,7 @@ const Section = (props) => {
 
       <Buttons>
         <ButtonGroup>
-          <LeftButton>Custom Order</LeftButton>
+          <LeftButton onClick={()=> dispatch(selected(props.car))}>Custom Order</LeftButton>
           <RightButton>Existing Inventory</RightButton>
         </ButtonGroup>
 
