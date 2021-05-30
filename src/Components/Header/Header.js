@@ -80,6 +80,7 @@ const RightMenu=styled.div`
         font-weight: 600;
         text-transform: uppercase;
         padding: 20px;
+        padding-right: 5px;
         
     }
 `

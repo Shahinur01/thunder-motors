@@ -11,6 +11,7 @@ import styled from "styled-components";
 import Header from "./Components/Header/Header";
 import Login from './Components/Login/Login'
 import { createContext, useState } from "react";
+import CarDetails from "./Components/CarDetails/CarDetails";
 
 export const UserContext = createContext();
 
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home></Home>
+          </Route>
+          <Route exact path="/car">
+            <CarDetails/>
           </Route>
           <Route exact path="/login">
             <Login/>
