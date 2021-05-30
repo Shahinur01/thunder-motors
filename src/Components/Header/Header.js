@@ -28,11 +28,11 @@ const Header = () => {
                 <li><a href="#">Existing Inventory</a></li>
                 <li><a href="#">Used Inventory</a></li>
                 <li><a href="#">Trade-in</a></li>
-                <li><a href="#">Cybertruck</a></li>
+                <li><a href="#">CyberTruck</a></li>
                 <li><a href="#">Roadster</a></li>
                 <li><a href="#">Semi</a></li>
                 <li><a href="#">Charging</a></li>
-                <li><a href="#">Powerwall</a></li>
+                <li><a href="#">PowerWall</a></li>
                 <li><a href="#">Commercial Energy</a></li>
                 <li><a href="#">Utilities</a></li>
                 <li><a href="#">Support</a></li>

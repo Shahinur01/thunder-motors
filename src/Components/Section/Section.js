@@ -3,15 +3,15 @@ import { useSelector } from "react-redux";
 import styled from "styled-components";
 
 const Section = (props) => {
-  const allCars = useSelector((state) => {
-    return state.cars.allCars;
-  });
+//   const allCars = useSelector((state) => {
+//     return state.cars.allCars;
+//   });
   const {id, title, description, range, image} = props.car;
 
   return (
-    <Wrap image={image}>
+    <Wrap  image={image}>
       <ItemText>
-              <h1>{title}</h1>
+              <h1 data-testid="header">{title}</h1>
               <p>{description}</p>
               <p>Speed Range: {range} km/h</p>
         
