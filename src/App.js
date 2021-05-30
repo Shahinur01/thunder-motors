@@ -9,9 +9,12 @@ import {
 import Home from "./Components/Home/Home";
 import styled from "styled-components";
 import Header from "./Components/Header/Header";
-import Login from './Components/Login/Login'
+
 import { createContext, useState } from "react";
 import CarDetails from "./Components/CarDetails/CarDetails";
+
+import Login from "./Components/Login/Login";
+import Signup from "./Components/Login/Signup";
 
 export const UserContext = createContext();
 
@@ -23,7 +26,7 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
       <Header />
-      <Header></Header>
+      
         <Switch>
         
           <Route path="/home">
@@ -37,6 +40,9 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login/>
+          </Route>
+          <Route exact path='/signup'>
+            <Signup />
           </Route>
           
           

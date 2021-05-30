@@ -1,9 +1,10 @@
 
 import cars from '../../../carInfo.json';
-import { ALL_CARS } from '../Action/carAction';
+import { ALL_CARS, SELECTED } from '../Action/carAction';
 
 const initialState ={
     allCars: cars,
+    selected: []
 }
 
 const carReducer = (state=initialState, action)=>{
@@ -11,6 +12,12 @@ const carReducer = (state=initialState, action)=>{
         case ALL_CARS:{
             const newState = {
                 ...state, allCars: action.payload
+            }
+            return newState;
+        }
+        case SELECTED: {
+            const newState = {
+                ...state, selected: state.selected.filter(b => b.id === action.payload.id)
             }
             return newState;
         }

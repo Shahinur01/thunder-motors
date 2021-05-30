@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import { Link } from "react-router-dom";
+import { Nav } from 'react-bootstrap';
 
 const Header = () => {
     const [burgerStatus, setBurgerStatus] = useState(false)
     return (
         <Container>
-            <a>
+            <Nav.Link as={Link} to={`/`}>
                 <h1>THUNDER</h1>
-            </a>
+            </Nav.Link>
             <Menu>
                 <a href="#">Model S</a> 
                 <a href="#">Model 3</a> 
@@ -18,7 +20,7 @@ const Header = () => {
             </Menu>
             <RightMenu>
                 <a href="#">Shop</a> 
-                <a href="#">Thunder Account</a> 
+                <Nav.Link as={Link} to={`/login`}>Thunder Account</Nav.Link> 
                 <CustomMenu onClick={()=>setBurgerStatus(true)}/>
             </RightMenu>
             <BurgerNav show={burgerStatus}>

@@ -8,6 +8,7 @@ const Home = () => {
     const allCars = useSelector((state)=>{
         return state.cars.allCars;
     })
+    
     console.log(allCars)
     return (
         <Container>
